@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Higiene Mental</title>
+<title>Higiene Mental | Psiquiatría y Psicoterapia</title>
 
 <style>
 body {
@@ -16,65 +16,103 @@ body {
 header {
     background: #0f172a;
     color: white;
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
 h1 {
     font-size: 40px;
-    margin: 0 0 20px 0;
+    max-width: 1100px;
+    margin: 0 auto 20px auto;
+    line-height: 1.15;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.5;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 55px 20px;
     max-width: 900px;
     margin: auto;
 }
+
 .card {
     display: block;
     text-decoration: none;
     color: #1e1e1e;
     background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 22px;
+    margin: 16px 0;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
     transition: 0.2s;
 }
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+.card strong {
+    font-size: 17px;
 }
 
 .btn-main {
     display: inline-block;
-    margin-top: 20px;
-    padding: 16px 28px;
+    margin-top: 22px;
+    padding: 17px 30px;
     background-color: #25D366;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.20);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+    transition: 0.2s;
 }
 
 .btn-main:hover {
     background-color: #1ebe5d;
+    transform: translateY(-2px);
 }
 
 .note {
     font-size: 13px;
     opacity: 0.85;
-    margin-top: 10px;
+    margin-top: 12px;
+}
+
+.small-warning {
+    font-size: 13px;
+    color: #555;
+    margin-top: 14px;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     font-size: 12px;
     color: gray;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    header {
+        padding: 55px 18px;
+    }
+
+    section {
+        padding: 40px 18px;
+    }
 }
 </style>
 </head>
@@ -82,32 +120,38 @@ footer {
 <body>
 
 <header>
-    <h1>Podemos entender lo que te está pasando y empezar a trabajar en ello desde la primera consulta.</h1>
+    <h1>Podemos entender lo que te está pasando y empezar a trabajarlo desde la primera consulta.</h1>
+
     <p>Atención psiquiátrica y psicoterapia con enfoque clínico, humano y confidencial.</p>
+
     <p class="note">Si esto lleva tiempo afectándote, es poco probable que se resuelva solo.</p>
-    <a href="https://wa.me/528182564031" class="btn-main">Iniciar evaluación clínica por WhatsApp</a>
+
+    <a href="https://wa.me/528182564031?text=Quiero%20agendar%20una%20evaluaci%C3%B3n%20cl%C3%ADnica.%20Entiendo%20que%20no%20se%20realizan%20valoraciones%20por%20mensaje." class="btn-main">
+        Iniciar evaluación clínica por WhatsApp
+    </a>
+
     <p class="note">Respuesta personal en horario disponible • Atención confidencial</p>
 </header>
 
 <section>
     <h2>¿Cómo puedo ayudarte?</h2>
 
-    <a href="https://wa.me/528182564031?text=Quiero%20iniciar%20evaluaci%C3%B3n%20por%20ansiedad" class="card">
+    <a href="https://wa.me/528182564031?text=Quiero%20agendar%20evaluaci%C3%B3n%20por%20ansiedad.%20Ya%20le%C3%AD%20que%20se%20requiere%20consulta%20cl%C3%ADnica." class="card">
         <strong>Ansiedad, preocupación constante o crisis de pánico</strong><br>
         Cuando la mente no se apaga, el cuerpo vive en alerta y todo empieza a sentirse demasiado.
     </a>
 
-    <a href="https://wa.me/528182564031?text=Quiero%20iniciar%20evaluaci%C3%B3n%20por%20tristeza%20o%20duelo" class="card">
+    <a href="https://wa.me/528182564031?text=Quiero%20agendar%20evaluaci%C3%B3n%20por%20tristeza%20o%20duelo.%20Entiendo%20que%20requiere%20consulta." class="card">
         <strong>Tristeza, duelo o pérdida de motivación</strong><br>
         Para entender lo que duele, ordenar lo que pesa y recuperar dirección sin minimizar lo que sientes.
     </a>
 
-    <a href="https://wa.me/528182564031?text=Quiero%20iniciar%20evaluaci%C3%B3n%20por%20insomnio%20o%20agotamiento" class="card">
+    <a href="https://wa.me/528182564031?text=Quiero%20agendar%20evaluaci%C3%B3n%20por%20insomnio%20o%20agotamiento.%20Entiendo%20que%20requiere%20consulta." class="card">
         <strong>Insomnio, cansancio mental o agotamiento</strong><br>
         Cuando dormir no descansa, pensar agota y funcionar cada día requiere demasiada fuerza.
     </a>
 
-    <a href="https://wa.me/528182564031?text=Quiero%20iniciar%20evaluaci%C3%B3n%20por%20dificultad%20para%20concentrarme" class="card">
+    <a href="https://wa.me/528182564031?text=Quiero%20agendar%20evaluaci%C3%B3n%20por%20dificultad%20para%20concentrarme.%20Entiendo%20que%20requiere%20consulta." class="card">
         <strong>Dificultad para concentrarte o iniciar tareas</strong><br>
         No siempre es falta de voluntad: a veces hay que entender cómo está funcionando tu mente.
     </a>
@@ -115,9 +159,19 @@ footer {
 
 <section>
     <h2>Da el primer paso</h2>
-    <p>Si algo de esto te resonó, no tienes que resolverlo solo. Podemos empezar a entenderlo juntos desde la primera consulta.</p>
-    <a href="https://wa.me/528182564031" class="btn-main">Iniciar evaluación clínica por WhatsApp</a>
-    <p class="note">La evaluación se realiza en 1 a 4 consultas según el caso. Este espacio está diseñado para comprender tu situación a profundidad.</p>
+
+    <p>
+        Si algo de esto te resonó, no tienes que resolverlo solo. 
+        La atención inicia con una evaluación clínica estructurada para comprender tu situación con seriedad.
+    </p>
+
+    <a href="https://wa.me/528182564031?text=Quiero%20agendar%20una%20evaluaci%C3%B3n%20cl%C3%ADnica.%20Entiendo%20que%20no%20se%20realizan%20valoraciones%20por%20mensaje." class="btn-main">
+        Agendar evaluación por WhatsApp
+    </a>
+
+    <p class="small-warning">
+        La evaluación se realiza en 1 a 4 consultas según el caso. No se realizan valoraciones clínicas por mensaje.
+    </p>
 </section>
 
 <footer>
